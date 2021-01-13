@@ -55,7 +55,7 @@
 
 			<div class="flex w-1/2 justify-end content-center">
 				<h2 style="color: rgb(159, 26, 69); font-size: 30px;" class="inline-block text-center p-2 md:h-auto md:p-4" href="#">
-					Google Summary By Campaign
+					Google Summary
 				</h2>
 			</div>
 
@@ -64,15 +64,29 @@
 	</div>
 
 	<!--Main-->
-	<div class="container pt-24 px-6 mx-auto flex flex-wrap flex-col md:flex-row items-center">
+	<div class="container pt-24 px-6 mx-auto items-center">
 
 		<!--Left Col-->
-		<div class="flex flex-col w-full justify-center lg:items-start overflow-y-hidden">
-			<div class="flex w-full justify-center md:justify-start pb-24 lg:pb-0 fade-in">
-				<iframe style="height: 600px; width: 100%;" src="https://app.datahero.com/service/embed/chart?cId=3115394&amp;cWidth=800&amp;cUser=278597&amp;uHash=pxnnge9t8x" frameborder="0"></iframe>
+		<div style="height: 450px; overflow-y: scroll;">
+				<iframe style="height:2800px; width: 100%;" src="https://app.datahero.com/service/embed/chart?cId=3115394&amp;cWidth=800&amp;cUser=278597&amp;uHash=pxnnge9t8x" frameborder="0"></iframe>
+		</div>
+
+		<br/>
+		<div class="grid grid-cols-3">
+		  <div style="height: 250px; width: 700px;">
+				<iframe class="underScale" style="height: 400px; width: 100%; max-width: 800px;" src="https://app.datahero.com/service/embed/chart?cId=3118751&amp;cWidth=800&amp;cUser=278597&amp;uHash=vxyVOrnhwb" frameborder="0"></iframe>
+			</div>
+		  <div style="height: 250px; width: 700px;">
+					<iframe class="underScale" style="height: 400px; width: 100%; max-width: 800px;" src="https://app.datahero.com/service/embed/chart?cId=3118752&amp;cWidth=800&amp;cUser=278597&amp;uHash=1xDOXaVTgz" frameborder="0"></iframe>
+			</div>
+			<div style="height: 250px; width: 700px;">
+					<iframe class="underScale" style="height: 400px; width: 100%; max-width: 800px;" src="https://app.datahero.com/service/embed/chart?cId=3118753&amp;cWidth=800&amp;cUser=278597&amp;uHash=ebpw81DFmx" frameborder="0"></iframe>
+			</div>
+		</div>
+			<div style="height: 250px;width: 700px;">
+					<iframe class="underScale" style="height: 600px; width: 100%; max-width: 800px;" src="https://app.datahero.com/service/embed/chart?cId=3118754&amp;cWidth=800&amp;cUser=278597&amp;uHash=dxjpmNwTrL" frameborder="0"></iframe>
 			</div>
 
-		</div>
 
 		<!--Footer-->
 		<div class="w-full pt-16 pb-6 text-sm text-center md:text-left fade-in">
@@ -85,9 +99,20 @@
 </div>
 
 
-  <!-- jQuery if you need it
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  -->
+	<style>
+  .underScale {
+		-moz-transform: scale(0.50, 0.50);
+		-webkit-transform: scale(0.50, 0.50);
+		-o-transform: scale(0.50, 0.50);
+		-ms-transform: scale(0.50, 0.50);
+		transform: scale(0.50, 0.50);
+		-moz-transform-origin: top left;
+		-webkit-transform-origin: top left;
+		-o-transform-origin: top left;
+		-ms-transform-origin: top left;
+		transform-origin: top left;
+  }
+</style>
 
 </body>
 
